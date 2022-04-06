@@ -1,0 +1,237 @@
+{
+  "mod_elements": [
+    {
+      "name": "BakaBlock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_block"
+    },
+    {
+      "name": "BakaOre",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ore"
+    },
+    {
+      "name": "BakaIngot",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot"
+    },
+    {
+      "name": "BakaIngotToBlock",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot_to_block"
+    },
+    {
+      "name": "BakaIngotToBakaSword",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot_to_baka_sword"
+    },
+    {
+      "name": "BakaBlockToIngot",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_block_to_ingot"
+    },
+    {
+      "name": "BakaSword",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_sword"
+    },
+    {
+      "name": "BakaOreToIngot",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ore_to_ingot"
+    },
+    {
+      "name": "BakaOreToIngot2",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ore_to_ingot_2"
+    },
+    {
+      "name": "BakaArmor",
+      "type": "armor",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "BakaIngotToHelmet",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot_to_helmet"
+    },
+    {
+      "name": "BakaIngotTochestplate",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot_tochestplate"
+    },
+    {
+      "name": "BakaIngotToleggings",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot_toleggings"
+    },
+    {
+      "name": "BakaIngotToboots",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot_toboots"
+    },
+    {
+      "name": "BakaPickaxe",
+      "type": "tool",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_pickaxe"
+    },
+    {
+      "name": "BakaIngotToPickaxe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot_to_pickaxe"
+    },
+    {
+      "name": "BakaMob",
+      "type": "livingentity",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_mob"
+    },
+    {
+      "name": "Netheriteblock",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheriteblock"
+    },
+    {
+      "name": "Trumpet",
+      "type": "rangeditem",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trumpet"
+    },
+    {
+      "name": "BakaNoteBullet",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_note_bullet"
+    },
+    {
+      "name": "BakaIngotToTrumpet",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot_to_trumpet"
+    },
+    {
+      "name": "BakaIngotToNoteBullet",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baka_ingot_to_note_bullet"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.bakamod.baka_armor_boots": "Baka Boots",
+      "item.bakamod.baka_ingot": "Baka Ingot",
+      "item.bakamod.baka_armor_leggings": "Baka Leggings",
+      "item.mod1.baka_ingot": "Baka Ingot",
+      "item.bakamod.baka_sword": "Baka Sword",
+      "item.mod1.baka_armor_boots": "Baka Boots",
+      "item.bakamod.baka_mob_spawn_egg": "Baka Spawn Egg",
+      "entity.bakamod.baka_mob": "Baka",
+      "block.mod1.baka_block": "Baka Block",
+      "item.mod1.baka_sword": "Baka Sword",
+      "item.mod1.baka_armor_helmet": "Baka Helmet",
+      "item.mod1.baka_armor_leggings": "Baka Leggings",
+      "item.mod1.baka_armor_chestplate": "Baka Chestplate",
+      "item.bakamod.baka_pickaxe": "Baka Pickaxe",
+      "block.bakamod.baka_ore": "Baka Ore",
+      "block.bakamod.baka_block": "Baka Block",
+      "item.bakamod.baka_armor_helmet": "Baka Helmet",
+      "item.mod1.baka_pickaxe": "Baka Pickaxe",
+      "block.mod1.baka_ore": "Baka Ore",
+      "item.bakamod.baka_note_bullet": "Baka Note Bullet",
+      "item.bakamod.baka_armor_chestplate": "Baka Chestplate",
+      "item.bakamod.trumpet": "TRUMPet"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "bakamod",
+    "modName": "Baka Mod",
+    "version": "1.0.0",
+    "author": "AllSuperHeroes, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.mod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100354000
+}

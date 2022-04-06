@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:air"
+    },
+    "1": {
+      "item": "minecraft:air"
+    }
+  },
+  "result": {
+    "item": "minecraft:netherite_block",
+    "count": 24
+  }
+}

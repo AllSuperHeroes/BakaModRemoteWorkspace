@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "345",
+    "6  "
+  ],
+  "key": {
+    "0": {
+      "item": "bakamod:baka_ingot"
+    },
+    "3": {
+      "item": "bakamod:baka_ingot"
+    },
+    "4": {
+      "item": "bakamod:baka_ingot"
+    },
+    "5": {
+      "item": "bakamod:baka_ingot"
+    },
+    "6": {
+      "item": "bakamod:baka_ingot"
+    }
+  },
+  "result": {
+    "item": "bakamod:trumpet",
+    "count": 1
+  }
+}

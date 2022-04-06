@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 50.0,
+    "cookingTime": 1,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:BakaOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:BakaIngot"
+    },
+    "name": "baka_ore_to_ingot",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 50,
+  "cookingtime": 1,
+  "ingredient": {
+    "item": "bakamod:baka_ore"
+  },
+  "result": {
+    "item": "bakamod:baka_ingot"
+  }
+}

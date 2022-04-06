@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "bakamod:blocks/baka_ore",
+    "particle": "bakamod:blocks/baka_ore"
+  }
+}

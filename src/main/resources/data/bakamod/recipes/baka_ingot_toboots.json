@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "bakamod:baka_ingot"
+    },
+    "2": {
+      "item": "bakamod:baka_ingot"
+    },
+    "3": {
+      "item": "bakamod:baka_ingot"
+    },
+    "5": {
+      "item": "bakamod:baka_ingot"
+    }
+  },
+  "result": {
+    "item": "bakamod:baka_armor_boots",
+    "count": 1
+  }
+}
