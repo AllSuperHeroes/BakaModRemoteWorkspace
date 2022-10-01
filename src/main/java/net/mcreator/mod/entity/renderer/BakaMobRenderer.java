@@ -1,3 +1,4 @@
+
 package net.mcreator.mod.entity.renderer;
 
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -24,7 +25,7 @@ public class BakaMobRenderer {
 				BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("bakamod:textures/2021_05_30_donald-trump-17967682.png");
+						return new ResourceLocation("bakamod:textures/entities/2021_05_30_donald-trump-17967682.png");
 					}
 				};
 				customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));

@@ -49,7 +49,7 @@ public class TrumpetItem extends BakamodModElements.ModElement {
 	public static final Item block = null;
 	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-			.size(0.5f, 0.5f)).build("entitybullettrumpet").setRegistryName("entitybullettrumpet");
+			.size(0.5f, 0.5f)).build("projectile_trumpet").setRegistryName("projectile_trumpet");
 
 	public TrumpetItem(BakamodModElements instance) {
 		super(instance, 22);
@@ -191,16 +191,15 @@ public class TrumpetItem extends BakamodModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
-			Entity imediatesourceentity = this;
-			if (this.inGround) {
+			Entity immediatesourceentity = this;
+			if (this.inGround)
 				this.remove();
-			}
 		}
 	}
 
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
-		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
+		entityarrow.shoot(entity.getLook(1).x, entity.getLook(1).y, entity.getLook(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setIsCritical(true);
 		entityarrow.setDamage(damage);

@@ -50,6 +50,7 @@ import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.entity.AreaEffectCloudEntity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.mod.item.BakaSwordItem;
@@ -96,6 +97,7 @@ public class BakaMobEntity extends BakamodModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 26);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 0);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 16);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.3);
 			ammma = ammma.createMutableAttribute(ForgeMod.SWIM_SPEED.get(), 0.3);
 			event.put(entity, ammma.create());
@@ -131,7 +133,12 @@ public class BakaMobEntity extends BakamodModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+				@Override
+				protected double getAttackReachSqr(LivingEntity entity) {
+					return (double) (4.0 + entity.getWidth() * entity.getWidth());
+				}
+			});
 			this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
@@ -173,7 +180,7 @@ public class BakaMobEntity extends BakamodModElements.ModElement {
 		public boolean attackEntityFrom(DamageSource source, float amount) {
 			if (source.getImmediateSource() instanceof AbstractArrowEntity)
 				return false;
-			if (source.getImmediateSource() instanceof PotionEntity)
+			if (source.getImmediateSource() instanceof PotionEntity || source.getImmediateSource() instanceof AreaEffectCloudEntity)
 				return false;
 			if (source == DamageSource.FALL)
 				return false;

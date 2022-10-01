@@ -3,6 +3,7 @@ package net.mcreator.mod.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
@@ -32,12 +33,12 @@ public class BakaIngotItem extends BakamodModElements.ModElement {
 		}
 
 		@Override
-		public int getItemEnchantability() {
-			return 0;
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.EAT;
 		}
 
 		@Override
-		public int getUseDuration(ItemStack itemstack) {
+		public int getItemEnchantability() {
 			return 0;
 		}
 
